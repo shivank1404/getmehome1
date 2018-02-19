@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+.snip1572 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  background: #ffffff;
+}
+
+.snip1572 *,
+.snip1572:before,
+.snip1572:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.snip1572 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.snip1572:before,
+.snip1572:after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.snip1572:before {
+  width: 300px;
+  height: 2px;
+}
+
+.snip1572:after {
+  height: 300px;
+  width: 2px;
+}
+
+.snip1572 figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.snip1572 h3 {
+  font-weight: 400;
+  padding: 8px 15px;
+  margin: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.snip1572 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1572:hover img,
+.snip1572.hover img {
+  zoom: 1;
+  filter: alpha(opacity=25);
+  -webkit-opacity: 0.25;
+  opacity: 0.25;
+}
+
+.snip1572:hover:before,
+.snip1572.hover:before,
+.snip1572:hover:after,
+.snip1572.hover:after {
+  opacity: 1;
+}
+
+.snip1572:hover:before,
+.snip1572.hover:before {
+  width: 50px;
+}
+
+.snip1572:hover:after,
+.snip1572.hover:after {
+  height: 50px;
+}
+
+.snip1572:hover h3,
+.snip1572.hover h3 {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+
+/* Demo purposes only */
+
+body {
+  background-color: #212121;
+  text-align: center;
+}
